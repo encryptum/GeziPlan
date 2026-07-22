@@ -24,7 +24,7 @@ function translateAuthError(message: string): string {
     return 'Supabase URL hatalı. .env dosyasında VITE_SUPABASE_URL=https://proje-id.supabase.co olmalı (/rest/v1 olmadan).';
   }
   if (message.includes('Invalid API key')) {
-    return 'Supabase anahtarı hatalı. Dashboard → API → anon public key kullanın.';
+    return 'Supabase anahtarı hatalı. Supabase → Project Settings → API Keys bölümündeki Publishable key veya legacy anon public key değerini kullanın.';
   }
   return message;
 }
