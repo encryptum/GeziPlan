@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f9b6e"/>
+      <stop offset="100%" style="stop-color:#2d7dd2"/>
+    </linearGradient>
+    <linearGradient id="path" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.7"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+  <!-- Mountain -->
+  <path d="M100 380 L200 200 L260 280 L320 180 L420 380 Z" fill="url(#path)" opacity="0.3"/>
+  <!-- Map pin -->
+  <g transform="translate(256, 200)">
+    <path d="M0-80 C-44-80 -80-44 -80 0 C-80 50 0 120 0 120 S80 50 80 0 C80-44 44-80 0-80Z" fill="white" opacity="0.95"/>
+    <circle cx="0" cy="-5" r="30" fill="url(#bg)"/>
+  </g>
+  <!-- Compass needle -->
+  <g transform="translate(256, 195)">
+    <path d="M0-18 L8 10 L0 5 L-8 10Z" fill="white"/>
+    <path d="M0 18 L8-10 L0-5 L-8-10Z" fill="url(#bg)" opacity="0.6"/>
+  </g>
+  <!-- Text -->
+  <text x="256" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="72" fill="white" letter-spacing="4">GP</text>
+</svg>
