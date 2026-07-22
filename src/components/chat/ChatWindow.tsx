@@ -110,7 +110,7 @@ export default function ChatWindow({ tripId }: ChatWindowProps) {
     }
   };
 
-  const handleSend = async (e: React.FormEvent, forceAiPrompt?: string) => {
+  const handleSend = async (e?: React.FormEvent, forceAiPrompt?: string) => {
     e?.preventDefault();
     const contentToSend = forceAiPrompt ?? newMessage.trim();
     if (!contentToSend) return;
